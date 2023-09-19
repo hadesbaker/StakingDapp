@@ -33,9 +33,20 @@ git clone https://github.com/hadesbaker/StakingDapp.git
 cd StakingDapp
 ```
 
-2. Install the required dependencies:
+2. Install the required frontend dependencies:
 
 ```bash
+cd frontend
+npm install
+# or
+yarn install
+```
+
+3. Install the required backend dependencies:
+
+```bash
+cd ..
+cd backend
 npm install
 # or
 yarn install
@@ -44,6 +55,10 @@ yarn install
 ### Usage
 
 Log into [RemixIDE](https://remix.ethereum.org) and deploy the Staking.sol contract. Copy the ABI and contract address and replace the values within frontend/contracts/index.js.
+
+In the backend folder, create a file called .env. Within the .env file, add a MORALIS_KEY variable with the moralis api key you can get from [here](https://admin.moralis.io/login).
+
+i.e. MORALIS_KEY=dwindwdiwndiwniwndiwdinwdinwdidindiwn
 
 In a seperate terminal window, run the backend node server:
 

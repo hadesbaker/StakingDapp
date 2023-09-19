@@ -1,0 +1,3 @@
+[submodule "f"]
+	path = f
+	url = ./f

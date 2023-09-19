@@ -5,7 +5,7 @@ StakingDapp
 
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
 
-StakingDapp is a fullstack DeFi protocol built in Solidity, NextJS, NodeJS, Ethers, Web3. The contract was deployed using [Remix IDE](https://remix.ethereum.org). It allows users to connect their MetaMask wallet, stake their SepoliaETH, and unstake their tokens for a desired interest rate.
+StakingDapp is a fullstack DeFi protocol built with Solidity, NextJS, NodeJS, Ethers, and Web3. The contract was deployed using [Remix IDE](https://remix.ethereum.org). It allows users to connect their MetaMask wallet, stake their SepoliaETH, and unstake their tokens at a desired interest rate.
 
 ## Table of Contents
 
@@ -49,7 +49,7 @@ In a seperate terminal window, run the backend node server:
 
 ```bash
 cd backend
-npm run start
+node index.js
 ```
 
 In another terminal window, run the development server:
@@ -60,6 +60,8 @@ npm run dev
 ```
 
 Finally, open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+Make sure to properly use the protocol, your metamask wallet is switched to the Sepolia network and the account you connect has SepoliaETH available.
 
 ## Deployment
 

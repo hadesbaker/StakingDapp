@@ -10,8 +10,6 @@ dotenv.config();
 app.use(cors());
 app.use(express.json());
 
-const INFURA_API_KEY = process.env.INFURA_API_KEY;
-
 app.get("/getWalletBalance", async (req, res) => {
   try {
     const { query } = req;
@@ -28,7 +26,7 @@ app.get("/getWalletBalance", async (req, res) => {
 });
 
 Moralis.start({
-  apiKey: INFURA_API_KEY,
+  apiKey: process.env.MORALIS_KEY,
 }).then(() => {
   app.listen(port, () => {
     console.log("Listening for API Calls");
